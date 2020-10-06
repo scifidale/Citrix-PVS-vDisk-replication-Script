@@ -6,7 +6,7 @@ CLS
 Echo ---Listing changes to be made please verify correct copy actions will be performed---
 timeout 5
  
-REM Run's Robocop in list mode and provides choice to confirm correct replication will be performed
+REM Run's Robocopy in list mode and provides choice to confirm correct replication will be performed
 Color 0C
 ROBOCOPY /L /XC /XO /XN D:\vDisks\ \\%ComputerName&\D$\vDisks /XF *.LOK /XD D:\vDisks\WRITECACHE
 Choice.exe /C YN /M "Do you want to proceed and copy the vDisks [Y/N]"
